@@ -1,2 +1,22 @@
-Para la creación de las skills se le pidió al LLM de Claude el formato común que utiliza para este tipo de archivos.
-A partir de ese formato, se fueron desarrollando las skills de forma iterativa: se generaba una primera versión, se probaba, y se corregía según los resultados obtenidos hasta llegar a la versión final.
+# TP3 - Ejercicio Integrador
+
+Trabajo práctico de Diseño de Software orientado a la creación de skills para
+trabajar con atributos de calidad y escenarios SEI.
+
+## Intregrantes
+
+- Tomas Lateana
+- Tadeo Brun
+
+Desarrollar tres skills capaces de:
+
+1. Generar escenarios de atributos de calidad utilizando el template de seis
+   partes del SEI.
+2. Verificar si un escenario está completo, es coherente y resulta medible.
+3. Elaborar un árbol de utilidad y reconocer drivers arquitectónicos.
+
+| Skill | Función |
+|---|---|
+| `GQAs.txt` | Identifica atributos de calidad y genera escenarios SEI completos. |
+| `Test-QAs.txt` | Revisa escenarios, detecta errores y propone correcciones. |
+| `Arbol-utilidad.txt` | Organiza escenarios en un árbol de utilidad y los prioriza. |
