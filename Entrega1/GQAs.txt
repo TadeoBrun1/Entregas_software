@@ -156,9 +156,34 @@ stakeholders.
 
 ### Ejemplo 2 — Modo A (enunciado de sistema completo)
 
-**Input:** enunciado de un servicio de alquiler de monopatines eléctricos con app móvil,
-paradas fijas, GPS en cada vehículo, integración con una billetera virtual para el pago, y
-una aplicación web de gestión y mantenimiento.
+**Input:** Una empresa va a lanzar un negocio para permitir el alquiler de monopatines eléctricos en
+distintas paradas de una ciudad capital, para lo cual requiere el desarrollo de una
+aplicación móvil para los usuarios del servicio, y adicionalmente una aplicación Web para
+la gestión correspondiente. El servicio consiste en contar con una flota de monopatines
+eléctricos, inicialmente estacionados en diferentes paradas previamente definidas.
+ 
+Para poder utilizar el monopatín el usuario deberá crearse una cuenta en la app, asociada a
+una cuenta de una billetera virtual. Previamente al uso del servicio, debe haber cargado en
+su cuenta un monto de dinero, que se irá descontando en función del tiempo de uso del
+monopatín.
+ 
+Una vez que la cuenta tenga cargado dinero, el usuario podrá activar un monopatín para su
+uso, mediante un lector de código QR. En ese momento se generará un viaje asociado a la
+cuenta, registrando fecha y hora de inicio. El uso del monopatín es por tiempo, y comienza
+a consumirse el crédito cuando se activa.
+ 
+Si el usuario requirió detenerse durante no más de 15 minutos en algún punto intermedio del
+viaje, la app contará con una opción Pausar. Con esta opción se registra una pausa asociada
+al viaje, para establecer que el monopatín no está siendo utilizado, aunque aún corre el
+gasto de créditos. De esta manera se puede establecer el uso real del monopatín. Una vez
+finalizada la pausa el usuario lo puede indicar por la app. Si pasaran los 15 minutos
+automáticamente se volverá a considerar en uso el monopatín, y se comienza a cobrar un
+monto mayor de crédito hasta el final del viaje.
+ 
+El monopatín contará con un GPS y está identificado unívocamente con un ID, por lo que en
+todo momento se puede determinar dónde está cada monopatín. Para el mantenimiento se
+requiere el registro del tiempo de uso y los kilómetros recorridos, así como la generación
+de reportes asociados, incluyendo tiempo con pausas y sin pausas.
 
 **Output (extracto — en Modo A se genera un bloque por cada QA identificado):**
 
