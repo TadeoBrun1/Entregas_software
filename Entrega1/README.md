@@ -17,6 +17,6 @@ Desarrollar tres skills capaces de:
 
 | Skill | Función |
 |---|---|
-| `GQAs.txt` | Identifica atributos de calidad y genera escenarios SEI completos. |
-| `Test-QAs.txt` | Revisa escenarios, detecta errores y propone correcciones. |
-| `Arbol-utilidad.txt` | Organiza escenarios en un árbol de utilidad y los prioriza. |
+| `GQAs.md` | Identifica atributos de calidad y genera escenarios SEI completos. |
+| `Test-QAs.md` | Revisa escenarios, detecta errores y propone correcciones. |
+| `Arbol-utilidad.md` | Organiza escenarios en un árbol de utilidad y los prioriza. |
